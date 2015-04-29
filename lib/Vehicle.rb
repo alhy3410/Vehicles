@@ -8,6 +8,7 @@ class Vehicle
     @id = @@all_vehicle.length().+(1)
   end
 
+
   define_singleton_method(:all) do
     @@all_vehicle
   end
