@@ -23,6 +23,11 @@ class Vehicle
   end
 
   define_method(:modelvehicle) do
-    @modelvehicle
+    @model
   end
+
+  define_method(:year) do
+    @year
+  end
+
 end
