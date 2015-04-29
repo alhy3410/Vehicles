@@ -1,5 +1,5 @@
 require('rspec')
-require('Vehicle')
+require('vehicle')
 
 describe(Vehicle) do
   before() do
@@ -11,6 +11,14 @@ describe(Vehicle) do
       test_vehicle = Vehicle.new("Toyota", "Prius", 2000)
       test_vehicle.save()
       expect(test_vehicle.make()).to(eq("Toyota"))
+    end
+  end
+
+  describe("#modelvehicle") do
+    it("returns the make of the vehicle") do
+      test_vehicle = Vehicle.new("Toyota", "Prius", 2000)
+      test_vehicle.save()
+      expect(test_vehicle.modelvehicle()).to(eq("Prius"))
     end
   end
 end
